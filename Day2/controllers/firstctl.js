@@ -6,6 +6,12 @@ module.exports.firstPage = async(req,res)=>{
     res.render("index",{data});
 };
 
+module.exports.addPage = (req,res)=>{
+    res.render("addAdmin")
+}
+module.exports.viewPage=(req,res)=>{
+    res.render("viewAdmin")
+}
 module.exports.addData=async(req,res)=>{
     
     req.body.image=req.file.path
